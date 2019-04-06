@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/stockSymbol"
+        android:layout_width="165dp"
+        android:layout_height="44dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="Enter Stock Symbol:"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/symbolInput"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-10dp"
+        android:layout_toEndOf="@+id/stockSymbol"
+        android:text=""
+        android:inputType="text"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/symbol"
+        android:layout_width="114dp"
+        android:layout_height="39dp"
+        android:layout_below="@+id/stockSymbol"
+        android:layout_marginTop="32dp"
+        android:gravity="right"
+        android:paddingTop="10dp"
+        android:text="Symbol:"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="115dp"
+        android:layout_height="38dp"
+        android:layout_alignTop="@+id/symbol"
+        android:layout_marginTop="39dp"
+        android:gravity="right"
+        android:text="Name:" />
+
+    <TextView
+        android:id="@+id/lastTradePrice"
+        android:layout_width="117dp"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="151dp"
+        android:gravity="right"
+        android:text="Last Trade Price:" />
+
+    <TextView
+        android:id="@+id/lastTradeTime"
+        android:layout_width="120dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/lastTradePrice"
+        android:layout_marginTop="-1dp"
+        android:gravity="right"
+        android:text="Last Trade Time:" />
+
+    <TextView
+        android:id="@+id/change"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/lastTradeTime"
+        android:layout_marginTop="-4dp"
+        android:gravity="right"
+        android:paddingTop="10dp"
+        android:text="Change:" />
+
+    <TextView
+        android:id="@+id/weekRange"
+        android:layout_width="118dp"
+        android:layout_height="54dp"
+        android:layout_below="@+id/change"
+        android:layout_marginTop="3dp"
+        android:gravity="right"
+        android:paddingTop="10dp"
+        android:text="52 Week Range:" />
+
+    <TextView
+        android:id="@+id/symbolOutput"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/symbolInput"
+        android:layout_alignBottom="@+id/symbolInput"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="-69dp"
+        android:background="#080808"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="#90ee90" />
+
+    <TextView
+        android:id="@+id/nameOutput"
+        android:layout_width="215dp"
+        android:layout_height="51dp"
+        android:layout_alignTop="@+id/symbolOutput"
+        android:layout_alignEnd="@+id/symbolOutput"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="-2dp"
+        android:background="#080808"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="#90ee90" />
+
+    <TextView
+        android:id="@+id/tradePriceOutput"
+        android:layout_width="214dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/nameOutput"
+        android:layout_alignEnd="@+id/nameOutput"
+        android:layout_marginTop="-13dp"
+        android:layout_marginEnd="-1dp"
+        android:background="#080808"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="#90ee90" />
+
+    <TextView
+        android:id="@+id/tradeTimeOutput"
+        android:layout_width="214dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/tradePriceOutput"
+        android:layout_alignEnd="@+id/tradePriceOutput"
+        android:layout_marginTop="-9dp"
+        android:layout_marginEnd="0dp"
+        android:background="#080808"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="#90ee90" />
+
+    <TextView
+        android:id="@+id/changeOutput"
+        android:layout_width="213dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tradeTimeOutput"
+        android:layout_alignEnd="@+id/tradeTimeOutput"
+        android:layout_marginTop="-8dp"
+        android:layout_marginEnd="0dp"
+        android:background="#080808"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="#90ee90" />
+
+    <TextView
+        android:id="@+id/rangeOutput"
+        android:layout_width="213dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/changeOutput"
+        android:layout_alignEnd="@+id/changeOutput"
+        android:layout_marginTop="-9dp"
+        android:layout_marginEnd="0dp"
+        android:background="#080808"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="#90ee90" />
+
+</RelativeLayout>
